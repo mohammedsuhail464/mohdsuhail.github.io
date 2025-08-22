@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+        content="Mohammed Suhail – Ethically-driven IT & Cybersecurity Specialist with hands-on DevOps, Software Engineering & Cloud expertise." />
+  <meta property="og:title" 
+content="Mohd Suhail 
+– Cybersecurity & DevOps Engineer" />
+  <meta property="og:description"
+        content="Portfolio featuring vulnerability scanning, SIEM dashboards, secure back-end, AWS deployments, CI/CD pipelines & ML research." />
+  <meta property="og:image"
+        content="https://mohammedsuhail.github.io/assets/preview.png" />
+  <meta property="og:url" content="https://mohammedsuhail.github.io/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Mobile Theme Color -->
+  <meta name="theme-color" content="#001f3f" />
+
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="manifest.json" />
+
+  <!-- Base Bootswatch Lumen theme -->
+  <link id="theme-stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.0/dist/lumen/bootstrap.min.css"
+        rel="stylesheet" />
+
+  <!-- FontAwesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        rel="stylesheet" />
+
+  <!-- AOS Scroll Animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+        rel="stylesheet" />
+
+  <!-- Custom CSS Overrides: Navy + Cyan Theme -->
+  <style>
+    :root {
+      --bs-primary:   #001f3f; /* Navy */
+      --bs-info:      #17a2b8; /* Cyan */
+    }
+    body {
+      scroll-behavior: smooth;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    /* Navbar & Hero Background */
+    .navbar.bg-primary,
+    .hero {
+      background-color: var(--bs-primary) !important;
+      color: #fff !important;
+    }
+    .section-title {
+      border-bottom: 3px solid var(--bs-info);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      transition: 0.3s;
+    }
+    #themeToggle, #backToTop {
+      position: fixed;
+      z-index: 1000;
+    }
+    #themeToggle {
+      top: 80px;
+      right: 20px;
+    }
+    #backToTop {
+      bottom: 20px;
+      right: 20px;
+      display: none;
+    }
+    :focus {
+      outline: 3px solid var(--bs-info);
+      outline-offset: 2px;
+    }
+    .card-img-top {
+      object-fit: cover;
+      height: 180px;
+    }
+  </style>
+
+  <title>Mohammed Suhail – Portfolio</title>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top" data-aos="fade-down">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Mohd Suhail</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navMenu"><span class="navbar-toggler-icon"></span></button>
+      <button id="themeToggle" class="btn btn-outline-light btn-sm" aria-label="Toggle theme">🌙</button>
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#feedback">Feedback</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO / ABOUT -->
+  <section id="about" class="hero text-center py-5" data-aos="zoom-in">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Ethically-driven IT & Cybersecurity Specialist</h1>
+      <p class="lead mt-3">
+        MSc Advanced Computer Security | CEH, CCNA, MCSA<br>
+        DevOps & Software Engineering | AWS, SIEM & ML
+      </p>
+      <a href="Mohd_Suhail_CV.pdf" class="btn btn-light btn-lg mt-3" download>Download CV</a>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="py-5" data-aos="fade-right">
+    <div class="container">
+      <h2 class="section-title">Technical & Soft Skills</h2>
+      <div class="row gy-4">
+        <div class="col-md-6 col-lg-4">
+          <h5>Cybersecurity & Threat Detection</h5>
+          <ul>
+            <li>Nmap, OpenVAS, Wireshark, OWASP ZAP, Nessus</li>
+            <li>ELK Stack, Snort, Suricata, pfSense</li>
+            <li>ISO 27001, NIST, FCA Guidelines, Compliance & Risk Frameworks, Malware Analysis</li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <h5>Network & Infrastructure</h5>
+          <ul>
+            <li>TCP/IP, DNS, DHCP, VPNs, VLANs</li>
+            <li>AWS CloudWatch, Linux CLI</li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <h5>Software Engineering</h5>
+          <ul>
+            <li>Python, Java, SQL, HTML/CSS, JavaScript, C/C++</li>
+            <li>Node.js, Express.js, React, Django</li>
+            <li>REST APIs, Postman, Jest, UI/UX collaboration, Azure</li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <h5>DevOps & CI/CD</h5>
+          <ul>
+            <li>Git/GitHub, GitHub Actions, Jenkins</li>
+            <li>Docker, Kubernetes (exposure), Bash scripting</li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <h5>Cloud Platforms & Data</h5>
+          <ul>
+            <li>AWS EC2/S3/Lambda/IAM</li>
+            <li>MongoDB, MySQL, PostgreSQL</li>
+            <li>Pandas, Excel, Power BI (exposure)</li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <h5>IT Support & Service Mgmt</h5>
+          <ul>
+            <li>ITIL-aligned incident handling</li>
+            <li>SLA monitoring, CSAT/NPS tracking, documentation</li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <h5>Soft Skills</h5>
+          <ul>
+            <li>Communication, Analytical Thinking, Problem Solving</li>
+            <li>Stakeholder Engagement, Cross-functional Collaboration</li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <h5>Languages</h5>
+          <ul><li>English, Hindi, Kannada</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="bg-light py-5" data-aos="fade-left">
+    <div class="container">
+      <h2 class="section-title">Professional Experience</h2>
+
+      <!-- Customer Digital Specialist -->
+      <div class="mb-4">
+        <h5 class="fw-bold">
+          Customer Digital Specialist
+          <small class="text-muted">July 2024 – Present</small>
+        </h5>
+        <p>Esure Group – Glasgow, Scotland</p>
+        <ul>
+          <li>Managed digital-first journeys across webchat, email, SMS & phone</li>
+          <li>Reduced complaint escalations by 15% with FCA-compliant empathy</li>
+          <li>Improved chatbot logic, boosting self-service resolution by 10%</li>
+        </ul>
+        <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#resp1">
+          Show More
+        </button>
+        <div class="collapse mt-2" id="resp1">
+          <ul>
+            <li>Resolved complex cases (death, hardship) with care and compliance</li>
+            <li>Identified login/form errors; collaborated on UX fixes</li>
+            <li>Reported behaviour trends via dashboards & Excel analysis</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Security & DevOps Intern -->
+      <div class="mb-4">
+        <h5 class="fw-bold">
+          Security & DevOps Intern
+          <small class="text-muted">May 2023 – Oct 2023</small>
+        </h5>
+        <p>University of the West of Scotland – Lanarkshire Campus</p>
+        <ul>
+          <li>Performed Nmap/OpenVAS/Wireshark scans; documented remediation</li>
+          <li>Built & tuned ELK SIEM dashboards for actionable alerts</li>
+          <li>Integrated security checks into GitHub Actions, cutting errors by 20%</li>
+        </ul>
+        <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#resp2">
+          Show More
+        </button>
+        <div class="collapse mt-2" id="resp2">
+          <ul>
+            <li>Configured pfSense firewalls & Snort IDS/IPS policies</li>
+            <li>Drafted ISO27001/NIST-aligned policies & IR plans</li>
+            <li>Assisted AWS lab setup: IAM roles & security group testing</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Security Research & ML Intern -->
+      <div class="mb-4">
+        <h5 class="fw-bold">
+          Security Research & ML Intern
+          <small class="text-muted">Nov 2023 – Apr 2024</small>
+        </h5>
+        <p>University of the West of Scotland – Lanarkshire Campus</p>
+        <ul>
+          <li>Built RF, SVM, KNN models—92% accuracy on CICIDS2017</li>
+          <li>Benchmarked Snort & Suricata; documented false-positive metrics</li>
+        </ul>
+        <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#resp3">
+          Show More
+        </button>
+        <div class="collapse mt-2" id="resp3">
+          <ul>
+            <li>Scanned web apps with OWASP ZAP; explored IPS strategies</li>
+            <li>Contributed to hybrid intrusion detection research</li>
+            <li>Created STRIDE threat models; applied secure design</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Software Engineer -->
+      <div class="mb-4">
+        <h5 class="fw-bold">
+          Software Engineer
+          <small class="text-muted">Oct 2021 – Nov 2022</small>
+        </h5>
+        <p>Zilingo Technologies – Bengaluru, India</p>
+        <ul>
+          <li>Automated CI/CD (GitHub Actions, Jenkins)—cut release time by 30%</li>
+          <li>Assisted AWS migration: IAM, S3, EC2, audit logging</li>
+        </ul>
+        <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#resp4">
+          Show More
+        </button>
+        <div class="collapse mt-2" id="resp4">
+          <ul>
+            <li>Full-stack dev: React, Node.js, MongoDB + API testing (Postman, Jest)</li>
+            <li>Linux CLI & AWS CloudWatch monitoring for uptime</li>
+            <li>Supported Docker & Kubernetes container deployments</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- PROJECTS -->
+<section id="projects" class="py-5" data-aos="zoom-in-up">
+  <div class="container">
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="row gy-4">
+      <!-- 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card project-card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">SSI Account Verification Web App</h5>
+            <p class="card-text">
+              Decentralized ID verification using Ethereum, React & Solidity.
+            </p>
+            <a href="https://github.com/mohammedsuhail464/Blockchain-SSI-Based-Account-Verifying-Web-Application"
+               class="btn btn-outline-info mt-auto" target="_blank">
+              View Code
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card project-card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">SSI Banking Transactions Web App</h5>
+            <p class="card-text">
+              Secure Ethereum transaction interface with on-chain history.
+            </p>
+            <a href="https://github.com/mohammedsuhail464/Blockchain-SSI-Based-Banking-Transactions-Web-Application"
+               class="btn btn-outline-info mt-auto" target="_blank">
+              View Code
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card project-card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">EOT Cranes Website</h5>
+            <p class="card-text">
+              Responsive industrial equipment showcase (HTML, CSS, JS).
+            </p>
+            <a href="https://github.com/mohammedsuhail464/EOT-Cranes-Website"
+               class="btn btn-outline-info mt-auto" target="_blank">
+              View Code
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card project-card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Movie Recommendation & Sentiment Analysis</h5>
+            <p class="card-text">
+              ML/NLP recommender with sentiment scoring (Flask, Scikit-learn).
+            </p>
+            <a href="https://github.com/mohammedsuhail464/Movie-Recommendation-and-Sentiments-Website"
+               class="btn btn-outline-info mt-auto" target="_blank">
+              View Code
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card project-card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Business Management System</h5>
+            <p class="card-text">
+              Django & PostgreSQL ERP with RBAC for multi-branch ops.
+            </p>
+            <a href="https://github.com/mohammedsuhail464/Comprehensive-Business-Management-System-For-Multi-Branch-Educational-Institution-Web-Application"
+               class="btn btn-outline-info mt-auto" target="_blank">
+              View Code
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card project-card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Fatigue Driver Detection App</h5>
+            <p class="card-text">
+              Android & OpenCV app with real-time fatigue alerts.
+            </p>
+            <a href="https://github.com/mohammedsuhail464/Fatigue-Driver-Detection-Mobile-Application"
+               class="btn btn-outline-info mt-auto" target="_blank">
+              View Code
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- EDUCATION & CERTIFICATIONS -->
+  <section id="education" class="bg-light py-5" data-aos="flip-left">
+    <div class="container">
+      <h2 class="section-title">Education & Certifications</h2>
+      <div class="row gy-4">
+        <div class="col-md-6">
+          <h5>MSc in Advanced Computer Security <small class="text-muted">Jan 2023–May 2024</small></h5>
+          <p>University of the West of Scotland – Lanarkshire Campus</p>
+        </div>
+        <div class="col-md-6">
+          <h5>BCA in Computer Applications <small class="text-muted">Jun 2018–Sep 2021</small></h5>
+          <p>JSS Shri Manjunatheshwara Institute – Dharwad, India</p>
+        </div>
+        <div class="col-12">
+          <h5>Key Certifications</h5>
+          <ul class="list-inline">
+            <li class="list-inline-item">CEH v9</li>
+            <li class="list-inline-item">CCNA</li>
+            <li class="list-inline-item">MCSA</li>
+           <li class="list-inline-item">Master's Certificate in Cyber Security</li>
+            <li class="list-inline-item">Linux Desktop Environment</li>
+            <li class="list-inline-item">Hardware & Networking</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISITOR FEEDBACK -->
+  <section id="feedback" class="bg-light py-5" data-aos="fade-up">
+    <div class="container">
+      <h2 class="section-title">Visitor Feedback</h2>
+      <form name="feedback" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="feedback" />
+        <div class="mb-3">
+          <label class="form-label">Name</label>
+          <input name="name" class="form-control" required />
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Email</label>
+          <input name="email" type="email" class="form-control" required />
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Comments</label>
+          <textarea name="comments" class="form-control" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-info">Submit Feedback</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-5" data-aos="fade-up">
+    <div class="container text-center">
+      <h2 class="section-title">Get in Touch</h2>
+      <p><i class="fas fa-envelope"></i>
+        <a href="mailto:mohammedsuhail464@outlook.com">mohammedsuhail464@outlook.com</a></p>
+      <p><i class="fas fa-phone"></i>
+        <a href="tel:+447442204571">+44 7442 204571</a></p>
+      <p><i class="fas fa-map-marker-alt"></i> Hamilton, Scotland, ML3 9EP</p>
+      <p>
+        <a href="https://linkedin.com/in/mohd464" class="btn btn-outline-primary" target="_blank">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <!-- BACK TO TOP -->
+  <button id="backToTop" class="btn btn-info btn-sm" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- FOOTER -->
+  <footer class="bg-secondary text-light text-center py-3" data-aos="fade-up">
+    <small>© 2025 Mohammed Suhail • All rights reserved</small>
+  </footer>
+
+  <!-- Scripts -->
+  <script async defer data-domain="mohammedsuhail.github.io"
+          src="https://plausible.io/js/plausible.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // Initialize AOS
+    AOS.init({ duration: 800, once: true });
+
+    // Theme toggle logic (Lumen ↔ Darkly)
+    (function(){
+      const toggle = document.getElementById('themeToggle');
+      const sheet  = document.getElementById('theme-stylesheet');
+      const light  = 'https://cdn.jsdelivr.net/npm/bootswatch@5.3.0/dist/lumen/bootstrap.min.css';
+      const dark   = 'https://cdn.jsdelivr.net/npm/bootswatch@5.3.0/dist/darkly/bootstrap.min.css';
+      let theme = localStorage.getItem('theme') || 'light';
+      sheet.href = theme==='dark'? dark: light;
+      toggle.textContent = theme==='dark'? '☀️':'🌙';
+      toggle.onclick = () => {
+        theme = sheet.href===light? 'dark':'light';
+        sheet.href = theme==='dark'? dark: light;
+        localStorage.setItem('theme', theme);
+        toggle.textContent = theme==='dark'? '☀️':'🌙';
+      };
+    })();
+
+    // Back-to-top logic
+    (function(){
+      const btn = document.getElementById('backToTop');
+      window.addEventListener('scroll', () => btn.style.display = window.scrollY>300 ? 'block' : 'none');
+      btn.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+    })();
+
+    // Register service worker
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js').catch(console.error);
+    }
+  </script>
+</body>
+</html>
